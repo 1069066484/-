@@ -1,0 +1,4 @@
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/INSTALL.dir
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/basisu.dir
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/ALL_BUILD.dir
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/ZERO_CHECK.dir

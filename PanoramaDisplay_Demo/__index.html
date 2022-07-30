@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama Display</title>
+
+    <link rel="stylesheet" href="src/css/default.css">
+
+    <script src="lib/three.js"></script>
+    <script src="lib/OrbitControls.js"></script>
+    <script src="lib/axios.js"></script>
+</head>
+
+<input type="file" id="fileInput">
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        let scene = new THREE.Scene()
+        let camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 2000)
+        camera.position.set(1, 0, 0)
+        let renderer = new THREE.WebGLRenderer()
+        renderer.setSize(window.innerWidth, window.innerHeight)
+        let orbitControls = new THREE.OrbitControls(camera, renderer.domElement)
+        orbitControls.enablePan = false
+        orbitControls.enableZoom = false
+
+        document.getElementById("container").appendChild(renderer.domElement)
+
+        const geometry = new THREE.SphereGeometry(500, 64, 64)
+        geometry.scale(-1, 1, 1)
+        const material = new THREE.MeshBasicMaterial({
+            color: 0xaaaaaa
+        })
+        const sphere = new THREE.Mesh(geometry, material)
+        sphere.position = camera.position.clone()
+        scene.add(sphere)
+
+        const loader = new THREE.TextureLoader()
+
+        /*loader.load('asset/panorama.jpg', (texture) => {
+            sphere.material.map = texture
+
+        })*/
+        
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight
+            camera.updateProjectionMatrix()
+            renderer.setSize(window.innerWidth, window.innerHeight)
+        })
+
+        document.getElementById('fileInput').addEventListener('change', (event) => {
+            let file = event.target.files[0]
+            let param = new FormData()
+            param.append('panorama', file, file.name)
+
+            console.log('========================= Axios post panorama START! =========================')
+            axios({
+                method: 'post',
+                url: 'http://10.177.35.99:5000/upfile',
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                },
+                data: param
+            }).then((response) => {
+                console.log('======================== Axios post panorama SUCCEED! ========================')
+                console.log('============================ Load panorama START! ============================')
+                loader.load('http://10.177.35.99:5000/' + response.data, (texture) => {
+                    console.log(response.data)
+                    sphere.material.map = texture
+                    render()
+                    console.log('============================ Load panorama SUCCEED! ==========================')
+                }, undefined, (error) => {
+                    console.log('============================= Load panorama FAIL! ============================')
+                })
+            }).catch((error) => {
+                console.log('========================= Axios post panorama FAIL! ==========================')
+            })
+        })
+
+        function render() {
+            requestAnimationFrame(render)
+            renderer.render(scene, camera)
+        }
+    </script>
+</body>
+
+</html>

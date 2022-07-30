@@ -1,0 +1,1 @@
+python app.py --addr "10.177.35.214:5000"  --basis_bin ../../../gView/basis/basis_universal/bin/Release/basisu.exe --__index_html /var/www/html/PanoramaDisplay_Demo/__index.html

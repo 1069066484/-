@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/3.12.2/CMakeCCompiler.cmake
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/3.12.2/CMakeCXXCompiler.cmake
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/3.12.2/CMakeRCCompiler.cmake
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeFiles/3.12.2/CMakeSystem.cmake
+D:/fduStudy/labZXD/repos/gView/basis/basis_universal/CMakeLists.txt
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeCInformation.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeCXXInformation.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeCommonLanguageInclude.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeGenericSystem.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeInitializeConfigs.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeLanguageInformation.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeRCInformation.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeSystemSpecificInformation.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/CMakeSystemSpecificInitialize.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Compiler/MSVC-C.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Compiler/MSVC-CXX.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Platform/Windows-MSVC-C.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Platform/Windows-MSVC-CXX.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Platform/Windows-MSVC.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Platform/Windows.cmake
+G:/f/libs/cmake/cmake-3.12.2-win64-x64/share/cmake-3.12/Modules/Platform/WindowsPaths.cmake

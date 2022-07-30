@@ -1,0 +1,7 @@
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/install.dir
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/list_install_components.dir
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/rebuild_cache.dir
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/basisu.dir
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/install/strip.dir
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/install/local.dir
+/home/jqzh/panorama_bg/basis_prj/basis_universal/CMakeFiles/edit_cache.dir
